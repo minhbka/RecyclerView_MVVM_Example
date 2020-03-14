@@ -14,11 +14,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val repository = MovieRepository(MovieApi())
-        GlobalScope.launch (Dispatchers.Main){
-            val movies = repository.getMovies()
-            Log.d("Response:", "$movies")
-        }
+
 
     }
 }
