@@ -2,6 +2,7 @@ package com.minhbka.recyclerviewmvvm
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
@@ -16,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         val repository = MovieRepository(MovieApi())
         GlobalScope.launch (Dispatchers.Main){
             val movies = repository.getMovies()
-            Toast.makeText(this@MainActivity,movies.toString(), Toast.LENGTH_LONG).show()
+            Log.d("Response:", "$movies")
         }
 
     }
