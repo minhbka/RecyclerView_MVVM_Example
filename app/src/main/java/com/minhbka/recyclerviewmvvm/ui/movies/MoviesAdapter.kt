@@ -1,9 +1,11 @@
-package com.minhbka.recyclerviewmvvm
+package com.minhbka.recyclerviewmvvm.ui.movies
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
+import com.minhbka.recyclerviewmvvm.R
+import com.minhbka.recyclerviewmvvm.data.models.Movie
 import com.minhbka.recyclerviewmvvm.databinding.RecycleviewMovieBinding
 
 class MoviesAdapter(

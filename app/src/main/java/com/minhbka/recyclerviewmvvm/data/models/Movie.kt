@@ -1,4 +1,4 @@
-package com.minhbka.recyclerviewmvvm
+package com.minhbka.recyclerviewmvvm.data.models
 
 
 import com.google.gson.annotations.SerializedName

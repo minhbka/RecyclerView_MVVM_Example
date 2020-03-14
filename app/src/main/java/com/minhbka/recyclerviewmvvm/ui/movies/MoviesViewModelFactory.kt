@@ -1,7 +1,8 @@
-package com.minhbka.recyclerviewmvvm
+package com.minhbka.recyclerviewmvvm.ui.movies
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import com.minhbka.recyclerviewmvvm.data.repository.MovieRepository
 
 class MoviesViewModelFactory(
     private val repository: MovieRepository

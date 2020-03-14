@@ -1,4 +1,4 @@
-package com.minhbka.recyclerviewmvvm
+package com.minhbka.recyclerviewmvvm.ui.movies
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,6 +8,9 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.minhbka.recyclerviewmvvm.R
+import com.minhbka.recyclerviewmvvm.data.network.MovieApi
+import com.minhbka.recyclerviewmvvm.data.repository.MovieRepository
 import kotlinx.android.synthetic.main.movies_fragment.*
 
 

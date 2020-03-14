@@ -4,6 +4,6 @@
             xmlns:tools="http://schemas.android.com/tools" android:id="@+id/main_nav"
             app:startDestination="@id/moviesFragment">
 
-    <fragment android:id="@+id/moviesFragment" android:name="com.minhbka.recyclerviewmvvm.MoviesFragment"
+    <fragment android:id="@+id/moviesFragment" android:name="com.minhbka.recyclerviewmvvm.ui.movies.MoviesFragment"
               android:label="movies_fragment" tools:layout="@layout/movies_fragment"/>
 </navigation>

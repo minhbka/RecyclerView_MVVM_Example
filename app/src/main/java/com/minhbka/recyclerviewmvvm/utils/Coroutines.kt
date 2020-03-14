@@ -1,10 +1,9 @@
-package com.minhbka.recyclerviewmvvm
+package com.minhbka.recyclerviewmvvm.utils
 
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.launch
-import javax.security.auth.callback.Callback
 
 object Coroutines{
     fun<T: Any> ioThenMain(work: suspend (() -> T?), callback:((T?) -> Unit))=

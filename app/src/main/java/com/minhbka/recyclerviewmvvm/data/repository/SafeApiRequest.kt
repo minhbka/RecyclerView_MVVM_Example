@@ -1,4 +1,4 @@
-package com.minhbka.recyclerviewmvvm
+package com.minhbka.recyclerviewmvvm.data.repository
 
 import org.json.JSONException
 import org.json.JSONObject
