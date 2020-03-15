@@ -4,17 +4,19 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.minhbka.recyclerviewmvvm.R
+import com.minhbka.recyclerviewmvvm.data.models.Movie
 import com.minhbka.recyclerviewmvvm.data.network.MovieApi
 import com.minhbka.recyclerviewmvvm.data.repository.MovieRepository
 import kotlinx.android.synthetic.main.movies_fragment.*
 
 
-class MoviesFragment : Fragment() {
+class MoviesFragment : Fragment(), RecycleViewClickListener {
 
 
     private lateinit var factory: MoviesViewModelFactory
@@ -38,10 +40,21 @@ class MoviesFragment : Fragment() {
             recycle_view_movies.also {
                 it.layoutManager = LinearLayoutManager(requireContext())
                 it.setHasFixedSize(true)
-                it.adapter = MoviesAdapter(movies)
+                it.adapter = MoviesAdapter(movies, this)
             }
 
         })
     }
 
+    override fun onRecyclerViewItemClick(view: View, movie: Movie) {
+        when(view.id){
+            R.id.button_book ->{
+                Toast.makeText(requireContext(), "Button Book is Clicked", Toast.LENGTH_SHORT).show()
+
+            }
+            R.id.layout_like ->{
+                Toast.makeText(requireContext(), "Button Layout Like is Clicked", Toast.LENGTH_SHORT).show()
+            }
+        }
+    }
 }
